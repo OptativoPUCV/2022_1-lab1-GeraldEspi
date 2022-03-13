@@ -46,3 +46,9 @@ exercises.c:92:9: error: incompatible types when assigning to type 'Vector {aka 
          ^
 Compilation failed
 f40322e
+do., 13 de mar. de 2022 18:44:28: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  2|5
+total_score: 20/70
+dc37d10
