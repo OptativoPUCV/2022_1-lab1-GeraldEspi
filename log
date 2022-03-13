@@ -26,3 +26,13 @@ exercises.c:87:9: error: incompatible types when assigning to type 'Vector {aka 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d03cee5
+do., 13 de mar. de 2022 18:36:38: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:93:9: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+    v[i] = valor;
+         ^
+Compilation failed
+4fa1d03
