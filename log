@@ -2,3 +2,27 @@ do., 13 de mar. de 2022  4:26:55:
  tests:  0|7
 total_score: 0/70
 c9aa740
+do., 13 de mar. de 2022 17:56:05: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:41:8: error: 'suma' redeclared as different kind of symbol
+    int suma;
+        ^~~~
+exercises.c:39:48: note: previous definition of 'suma' was here
+ void sumaNultimos(int a[], int n, int m, int * suma) {
+                                                ^~~~
+exercises.c:41:8: error: unused variable 'suma' [-Werror=unused-variable]
+    int suma;
+        ^~~~
+exercises.c:40:8: error: unused variable 'i' [-Werror=unused-variable]
+    int i;
+        ^
+exercises.c: In function 'asignarValor':
+exercises.c:87:9: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+    v[i] = valor;
+         ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d03cee5
