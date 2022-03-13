@@ -36,3 +36,13 @@ exercises.c:93:9: error: incompatible types when assigning to type 'Vector {aka 
          ^
 Compilation failed
 4fa1d03
+do., 13 de mar. de 2022 18:43:09: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:92:9: error: incompatible types when assigning to type 'Vector {aka struct <anonymous>}' from type 'int'
+    v[i] = valor;
+         ^
+Compilation failed
+f40322e
