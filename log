@@ -138,3 +138,14 @@ exercises.c:66:11: error: 'ffd' is used uninitialized in this function [-Werror=
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5b1eab5
+do., 13 de mar. de 2022 22:54:52: 
+ exercises.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+test.c: In function 'crearPersona':
+exercises.c:66:6: error: 'i' is used uninitialized in this function [-Werror=uninitialized]
+    i = i+1;
+    ~~^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2d883c1

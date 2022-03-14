@@ -62,8 +62,9 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   int ffd;
-   return ffd;
+   int i;
+   i = i+1;
+   return NULL;
 }
 
 /*
@@ -83,7 +84,8 @@ Vector * crearVector(int n) {
    Vector *vector;
    vector = ( Vector*) calloc(n, sizeof(Vector));
    for(size_t i = 0; i< n; i++)
-   {vector[i].datos = (int*) calloc(n, sizeof(int)); vector[i].capacidad = n;
+   {vector[i].datos = (int*) calloc(n, sizeof(int)); 
+   vector[i].capacidad = n;
    }
    return vector;
 }
