@@ -52,3 +52,20 @@ do., 13 de mar. de 2022 18:44:28:
  tests:  2|5
 total_score: 20/70
 dc37d10
+do., 13 de mar. de 2022 22:23:36: 
+ exercises.c | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:84:19: error: expected expression before 'int'
+    (*vector) = (* int ) malloc (n*sizeof(int));
+                   ^~~
+exercises.c:84:25: error: expected ';' before 'malloc'
+    (*vector) = (* int ) malloc (n*sizeof(int));
+                         ^~~~~~
+exercises.c:85:11: error: function returns address of local variable [-Werror=return-local-addr]
+    return vector;
+           ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+916d294
