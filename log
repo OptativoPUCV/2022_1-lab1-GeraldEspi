@@ -69,3 +69,26 @@ exercises.c:85:11: error: function returns address of local variable [-Werror=re
 cc1.exe: all warnings being treated as errors
 Compilation failed
 916d294
+do., 13 de mar. de 2022 22:35:41: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearVector':
+exercises.c:84:35: error: implicit declaration of function 'sozeof' [-Werror=implicit-function-declaration]
+    vector = ( Vector*) malloc(n * sozeof(Vector))
+                                   ^~~~~~
+exercises.c:84:42: error: expected expression before 'Vector'
+    vector = ( Vector*) malloc(n * sozeof(Vector))
+                                          ^~~~~~
+exercises.c:85:4: error: expected ';' before 'return'
+    return vector;
+    ^~~~~~
+exercises.c:83:12: error: variable 'vector' set but not used [-Werror=unused-but-set-variable]
+    Vector *vector;
+            ^~~~~~
+exercises.c:86:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+9bba0ed
