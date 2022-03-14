@@ -113,3 +113,14 @@ exercises.c:86:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 dde0f82
+do., 13 de mar. de 2022 22:39:51: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:65:8: error: unused variable 'ffd' [-Werror=unused-variable]
+    int ffd;
+        ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a44162b
