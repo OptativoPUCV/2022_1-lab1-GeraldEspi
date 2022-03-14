@@ -124,3 +124,17 @@ exercises.c:65:8: error: unused variable 'ffd' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a44162b
+do., 13 de mar. de 2022 22:49:32: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:66:11: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+    return ffd;
+           ^~~
+exercises.c:66:11: error: 'ffd' is used uninitialized in this function [-Werror=uninitialized]
+    return ffd;
+           ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5b1eab5
