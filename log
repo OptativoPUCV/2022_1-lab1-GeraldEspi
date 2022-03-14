@@ -92,3 +92,24 @@ exercises.c:86:1: error: control reaches end of non-void function [-Werror=retur
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9bba0ed
+do., 13 de mar. de 2022 22:39:18: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:65:8: error: unused variable 'ffd' [-Werror=unused-variable]
+    int ffd;
+        ^~~
+exercises.c: In function 'crearVector':
+exercises.c:85:4: error: expected ';' before 'return'
+    return vector;
+    ^~~~~~
+exercises.c:83:12: error: variable 'vector' set but not used [-Werror=unused-but-set-variable]
+    Vector *vector;
+            ^~~~~~
+exercises.c:86:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+dde0f82
